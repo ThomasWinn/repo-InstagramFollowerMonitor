@@ -59,7 +59,7 @@ class InstagramBot:
 
         following = self._get_names()
 
-        self.driver.find_element_by_xpath("//a[contains(@href, '/followers')]")\
+        self.driver.find_element_by_xpath("//a[contains(@href,'/followers')]")\
             .click()
 
         followers = self._get_names()
@@ -78,7 +78,7 @@ class InstagramBot:
         #self.driver.execute_script('arguments[0].scrollIntoView()', suggestions)
         #sleep(2)
 
-        scroll_box = self.driver.find_element_by_xpath("/html/body/div[3]/div/div[2]")
+        scroll_box = self.driver.find_element_by_xpath("/html/body/div[4]/div/div[2]")
 
         # On each scroll compare the height of the box with the height of the box before scroll
         # If height same then stop
@@ -102,9 +102,9 @@ class InstagramBot:
         # close button 
         self.driver.find_element_by_xpath("/html/body/div[4]/div/div[1]/div/div[2]/button")\
             .click()
-        
         return names
 
 # Initialize function and calls the getUnfollowed function
 myBot = InstagramBot('thomaswinn1', 'S@die2011')
 myBot.getUnfollowed()
+
