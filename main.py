@@ -105,6 +105,6 @@ class InstagramBot:
         return names
 
 # Initialize function and calls the getUnfollowed function
-myBot = InstagramBot('thomaswinn1', 'S@die2011')
+myBot = InstagramBot('__USERNAME__', '__PASSWORD__')
 myBot.getUnfollowed()
 
