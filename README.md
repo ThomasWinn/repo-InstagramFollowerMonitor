@@ -7,7 +7,7 @@ Before use you must install chrome web driver and selenium
 
 Selenium: `pip3 install selenium`
 
-chrome web driver: `https://chromedriver.chromium.org` -> download latest stable release -> mv ~/download/chromedriver /usr/local/bin
+chrome web driver: `https://chromedriver.chromium.org` -> download latest stable release -> `mv ~/download/chromedriver /usr/local/bin`
 
 Inside the Python code: `myBot = InstagramBot('__USERNAME__', '__PASSWORD__')` change Username and Password to YOUR username and password
 
